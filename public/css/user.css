@@ -1,0 +1,132 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+    }
+    
+    .navbar-brand span.text-danger {
+        color: #714cdf;
+    }
+    
+    .navbar-brand span.text-white {
+        color: #fff;
+    }
+    
+    .navbar-dark .navbar-nav .nav-link {
+        color: #fff;
+    }
+    
+    .navbar-dark .navbar-nav .nav-link.active {
+        color: #714cdf;
+    }
+    
+    .sidebar {
+        background-color: #1a1a1a;
+        padding: 20px;
+        border-radius: 10px;
+        position: -webkit-sticky; /* For Safari */
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    
+    .sidebar .user-info img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .sidebar .nav-link {
+        color: #fff;
+        margin: 10px 0;
+    }
+    
+    .sidebar .nav-link.active {
+        background-color: #714cdf;
+        border-radius: 5px;
+    }
+    
+    .content {
+        background-color: #1a1a1a;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    .card {
+        background-color: #333;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .card .card-img-top {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    .card .card-body {
+        text-align: center;
+    }
+    
+    .card .btn-primary {
+        background-color: #714cdf;
+        border: none;
+    }
+    
+    .card .btn-primary:hover {
+        background-color: #714cdf;
+    }
+
+    /* Tambahkan ini di file home-user.css */
+.navbar-search-input {
+    min-width: 250px; /* Lebar minimum untuk input */
+}
+
+.navbar-search-button {
+    background-color: transparent; /* Warna latar tombol */
+    color: white; /* Warna teks tombol */
+    border-color: white; /* Warna border tombol */
+}
+
+
+.bg-sidebar {
+    background-color: #1c1c1c; /* Sesuaikan dengan warna sidebar */
+}
+.profile-container {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.profile-header {
+    text-align: center;
+}
+.profile-header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.profile-header h4, .profile-header p {
+    margin: 10px 0;
+}
+.score-challenge, .bio {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.score-challenge table {
+    width: 100%;
+}
+.score-challenge table th, .score-challenge table td {
+    padding: 10px;
+    text-align: left;
+}
+.recent-challenge {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
