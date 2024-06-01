@@ -159,14 +159,3 @@ a::-moz-focus-inner {
   .footer .social-icons a:hover {
   }
 
-  /* Button */
-  .btn {
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-  
