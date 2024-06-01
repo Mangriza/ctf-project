@@ -157,5 +157,16 @@ a::-moz-focus-inner {
   }
   
   .footer .social-icons a:hover {
+    color: #ff4b5c;
+
   }
 
+
+  /* Additional styles for the new layout */
+.card {
+
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
