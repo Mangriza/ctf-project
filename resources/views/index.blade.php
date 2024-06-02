@@ -158,10 +158,10 @@
             <div class="row">
               <div class="col-md-3">
                 <div class="card">
-                  <img class="card-img-top" src="{{ asset('img/sample_placeholder.png') }}" alt="Walter White">
+                  <img class="card-img-top" src="{{ asset('img/faizal.jpeg') }}" alt="Ijel">
                   <div class="card-body text-center">
-                    <h5 class="card-title">Walter White</h5>
-                    <p class="card-text">Web Development</p>
+                    <h5 class="card-title">Faizal Azzriel Gibar</h5>
+                    <p class="card-text">Front End Developer</p>
                     <div class="social-icons">
                       <a href="#"><i class="fab fa-twitter"></i></a>
                       <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -174,10 +174,10 @@
               </div>
               <div class="col-md-3">
                 <div class="card">
-                  <img class="card-img-top" src="{{ asset('img/sample_placeholder.png') }}" alt="Sarah Jhinson">
+                  <img class="card-img-top" src="{{ asset('img/sample_placeholder.png') }}" alt="Asep">
                   <div class="card-body text-center">
-                    <h5 class="card-title">Sarah Jhinson</h5>
-                    <p class="card-text">Marketing</p>
+                    <h5 class="card-title">Andhika Septian Prayoga</h5>
+                    <p class="card-text">Fullstack Developer</p>
                     <div class="social-icons">
                       <a href="#"><i class="fab fa-twitter"></i></a>
                       <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -190,10 +190,10 @@
               </div>
               <div class="col-md-3">
                 <div class="card">
-                  <img class="card-img-top" src="{{ asset('img/sample_placeholder.png') }}" alt="William Anderson">
+                  <img class="card-img-top" src="{{ asset('img/sample_placeholder.png') }}" alt="Rija">
                   <div class="card-body text-center">
-                    <h5 class="card-title">William Anderson</h5>
-                    <p class="card-text">Content</p>
+                    <h5 class="card-title">M Riza Buccharelli</h5>
+                    <p class="card-text">UI/UX Designer</p>
                     <div class="social-icons">
                       <a href="#"><i class="fab fa-twitter"></i></a>
                       <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -207,10 +207,29 @@
               
               <div class="col-md-3">
                 <div class="card">
-                  <img class="card-img-top" src="{{ asset('img/sample_placeholder.png') }}" alt="Amanda Jepson">
+                  <img class="card-img-top" src="{{ asset('img/sample_placeholder.png') }}" alt="Abay">
                   <div class="card-body text-center">
-                    <h5 class="card-title">Amanda Jepson</h5>
-                    <p class="card-text">Accountant</p>
+                    <h5 class="card-title">Akbar Wira Nugraha</h5>
+                    <p class="card-text">Back end Developer</p>
+                    <div class="social-icons">
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-google"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+                <div class="card">
+                  <img class="card-img-top" src="{{ asset('img/sample_placeholder.png') }}" alt="Ipul">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Saeful Rizal</h5>
+                    <p class="card-text">Database Engineer</p>
                     <div class="social-icons">
                       <a href="#"><i class="fab fa-twitter"></i></a>
                       <a href="#"><i class="fab fa-facebook-f"></i></a>
