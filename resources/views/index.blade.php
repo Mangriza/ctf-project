@@ -7,11 +7,9 @@
     <title>Capture The Flag</title>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    
     <link rel="stylesheet" href="{{ asset('css/bootstrap4-neon-glow.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('css/particles.css') }}">
-    
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css'>
     
@@ -174,7 +172,7 @@
               </div>
               <div class="col-md-3">
                 <div class="card">
-                  <img class="card-img-top" src="{{ asset('img/sample_placeholder.png') }}" alt="Asep">
+                  <img class="card-img-top" src="{{ asset('img/Asep.jpg') }}" alt="Asep">
                   <div class="card-body text-center">
                     <h5 class="card-title">Andhika Septian Prayoga</h5>
                     <p class="card-text">Fullstack Developer</p>

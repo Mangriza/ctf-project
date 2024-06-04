@@ -16,3 +16,20 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/user', function () {
+    return view('home-user');
+});
+
+Route::get('/profile', function () {
+    return view('profile-user');
+});
+
+Route::get('/challenge', function () {
+    return view('all-challenge');
+});
+
+Route::get('/scoreboard', function () {
+    return view('board-user');
+});
+

@@ -12,109 +12,127 @@
     <link rel="stylesheet" href="{{ asset('css/particles.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css'>
-    <style>
-        .bg-sidebar {
-            background-color: #1c1c1c; /* Sesuaikan dengan warna sidebar */
-        }
-    </style>
+    <script defer   src="../Js/main.js"></script>
+    <title>Capture And Flag</title>
 </head>
-<body>
-    <div id="particles-js"></div>
-    <div class="navbar-dark text-white">
-        <div class="container">
-            <nav class="navbar px-0 navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="#"><span class="text-danger">CTFin</span><span class="text-white">AJA</span></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2 navbar-search-input" type="search" placeholder="Cari..." aria-label="Search">
-                        <button class="btn navbar-search-button my-2 my-sm-0" type="submit">Cari</button>
-                    </form>
-                </div>
-            </nav>
-        </div>
-    </div>
 
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="sidebar bg-sidebar">
-                    <div class="user-info text-center">
-                        <img src="{{ asset('img/sample_placeholder.png') }}" alt="User Image" class="img-fluid rounded-circle">
-                        <h4 class="mt-2">Name User</h4>
-                    </div>
-                    <ul class="nav flex-column mt-4">
-                        <li class="nav-item">
-                            <a class="nav-link " href="">Home</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link " href="#">Profile</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">Challenges</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Scoreboard</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Notification</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Settings</li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Logout</a>
-                        </li>
-                    </ul>
-                </div>
+    <body>
+        
+  <div id="particles-js"></div>
+    <nav class="main-menu">
+          <div>
+            <div class="user-info">
+                <img src="{{ asset('img/sample_placeholder.png') }}" alt="">
+              <p>Name User</p>
             </div>
-            <div class="col-md-9">
-            <div class="leaderboard-container">
-                <h3 class="text-center mb-4">Leaderboard</h3>
-                <div class="table-responsive">
-                    <table class="table table-dark table-hover">
+            <ul>
+              <li class="nav-item">
+                <a href="#">
+                  <i class="fa fa-home nav-icon"></i>
+                  <span class="nav-text">Home</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="profile.html">
+                  <i class="fa fa-user nav-icon"></i>
+                  <span class="nav-text">Profile</span>
+                </a>
+              </li>
+    
+              <li class="nav-item">
+                <a href="#">
+                  <i class="fa fa-bars nav-icon"></i>
+                  <span class="nav-text">Challenges</span>
+                </a>
+              </li>
+    
+              <li class="nav-item active">
+                <a href="scoreboard.html">
+                  <i class="fa fa-trophy nav-icon"></i>
+                  <span class="nav-text">Scoreboard</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+    
+          <ul>
+            <li class="nav-item">
+              <a href="Support.html">
+                <i class="fas fa-question-circle nav-icon"></i>
+                <span class="nav-text">Support</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="settings.html">
+                <i class="fa fa-cog nav-icon"></i>
+                <span class="nav-text">Settings</span>
+              </a>
+            </li>
+    
+            <li class="nav-item">
+              <a href="../index.html">
+                <i class="fa fa-sign-out-alt nav-icon"></i>
+                <span class="nav-text">Logout</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+    
+        <section class="content">
+          <div class="inside-content">
+            <div class="search-and-check">
+              <form class="search-box">
+                <input type="text" placeholder="Search Challenge..." />
+                <i class="bx bx-search"></i>
+              </form>
+          </div>
+            <div class="header">
+                <a class="navbar-brand" href="#"><span>CTFin</span><span>AJA</span></a>
+                              <div class="lead mb-3 text-mono text-success">Scoreboard Capture And Flag, You are AT the rank 1 !!</div>
+            </div>
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Leaderboard</title>
+                <link rel="stylesheet" href="styles.css">
+            </head>
+            <body>
+                <div class="leaderboard-container">
+                    <h2>Leaderboard</h2>
+                    <input type="text" id="filterInput" placeholder="Filter by name...">
+                    <table id="leaderboardTable">
                         <thead>
                             <tr>
                                 <th>Rank</th>
-                                <th>Username</th>
+                                <th>Name</th>
                                 <th>Score</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <!-- Contoh data statis, ganti dengan data dinamis sesuai dengan backend -->
-                            <tr>
-                                <td>1</td>
-                                <td>user123</td>
-                                <td>1500</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>user456</td>
-                                <td>1450</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>user789</td>
-                                <td>1400</td>
-                            </tr>
-                            <!-- Akhir dari contoh data -->
+                            <!-- User rows will be populated here by JavaScript -->
                         </tbody>
                     </table>
+                    <div class="pagination-container">
+                        <button id="prevPage">Previous</button>
+                        <span id="currentPage">1</span>
+                        <button id="nextPage">Next</button>
+                    </div>
                 </div>
-            </div>
-        </div>
-        </div>
-    </div>
-        </div>
-    </div>
+                <script src="script.js"></script>
+            </body>
+            </html>
+          </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <script src="{{ asset('js/particles.js') }}"></script>
-    <script src="{{ asset('js/app.js') }}"></script>
-</body>
+
+        </section</table>>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script src="{{ asset('js/particles.js') }}"></script>
+        <script src="{{ asset('js/app.js') }}"></script>
+      </body>
 </html>
+
